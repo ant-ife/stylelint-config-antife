@@ -1,0 +1,34 @@
+{
+  "name": "stylelint-config-antife",
+  "version": "1.0.0",
+  "description": "Stylelint config for Ant international FE team",
+  "keywords": [
+    "stylelint"
+  ],
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ant-ife/stylelint-config-antife"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+    "eslint": "^4.13.1",
+    "eslint-config-antife": "^1.0.0",
+    "istanbul": "^0.4.5",
+    "mocha": "^4.0.1",
+    "pre-commit": "^1.2.2"
+  },
+  "scripts": {
+    "test": "istanbul cover `npm bin`/_mocha",
+    "lint": "eslint --fix .",
+    "ci": "npm run lint && npm run test"
+  },
+  "pre-commit": [
+    "lint"
+  ],
+  "license": "MIT"
+}
