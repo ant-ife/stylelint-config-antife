@@ -28,7 +28,7 @@ Add `.stylelintrc.js` in your root directory.
 
 ```javascript
 module.exports = {
-  extends: 'stylelint-config-intl'
+  extends: 'stylelint-config-antife',
 }
 ```
 
