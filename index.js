@@ -13,7 +13,7 @@ module.exports = {
     'declaration-block-no-shorthand-property-overrides': true,
     'declaration-block-trailing-semicolon': 'always',
     'function-url-quotes': 'never',
-    indentation: 2,
+    'indentation': 2,
     'max-empty-lines': 2,
     'max-line-length': 120,
     'max-nesting-depth': 5,
@@ -25,7 +25,7 @@ module.exports = {
     'rule-empty-line-before': ['always-multi-line', { ignore: ['after-comment', 'inside-block'] }],
     'string-no-newline': true,
     'time-min-milliseconds': 100,
-    'unit-no-unknown': true,
+    'unit-no-unknown': [true, { ignoreUnits: ['rpx'] }],
 
     'function-linear-gradient-no-nonstandard-direction': true,
     'property-no-vendor-prefix': true,
